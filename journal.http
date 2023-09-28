@@ -1,0 +1,42 @@
+### Find all content
+GET http://localhost:8080/api/journal
+
+### Get content by id
+GET http://localhost:8080/api/journal/1
+
+### Create new content
+POST http://localhost:8080/api/journal
+Content-Type: application/json
+
+{
+  "id": null,
+  "routeName": "Panda Express",
+  "routeGrade": "10.b",
+  "pitches": 1,
+  "attempts": 20,
+  "status": "WORKING",
+  "notes": "This route is ok.",
+  "dateCreated": "2023-08-27T14:17:15.926619",
+  "dateUpdated": null
+}
+
+
+### Update existing content
+PUT http://localhost:8080/api/journal/2
+Content-Type: application/json
+
+{
+  "id": null,
+  "routeName": "Panda Express",
+  "routeGrade": "10.b",
+  "pitches": 1,
+  "attempts": 21,
+  "status": "WORKING",
+  "notes": "This route is ok.",
+  "dateCreated": "2023-08-27T14:17:15.926619",
+  "dateUpdated": "2023-08-27T14:17:15.926619"
+}
+
+### Delete existing content
+DELETE http://localhost:8080/api/journal/3
+
