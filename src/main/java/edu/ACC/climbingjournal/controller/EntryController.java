@@ -1,7 +1,6 @@
 package edu.ACC.climbingjournal.controller;
 
 import edu.ACC.climbingjournal.model.Entry;
-import edu.ACC.climbingjournal.repository.EntryCollectionRepository;
 import edu.ACC.climbingjournal.repository.EntryRepository;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
